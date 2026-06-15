@@ -6,53 +6,53 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'How long does it take to get my trade license?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'With FastLicense, you can get your Dubai trade license in as little as 18 hours once all documents are submitted.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'Do I need to travel to Dubai to set up my company?',
+      answer: 'No, our process is 100% online. You can complete the entire setup from the comfort of your home anywhere in the world.',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
+      question: 'Are there any hidden fees in your pricing?',
       answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+        'Absolutely not. We believe in 100% transparency. The price you see is the price you pay, with no surprise costs.',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'Will you help me open a corporate bank account?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        'Yes! We partner with leading UAE banks and will guide you through the entire account opening process.',
     },
     {
       question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+        'Do you provide residency visa support?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        'Yes, our packages include full support for investor and employee visas, making your relocation seamless.',
     },
     {
       question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+        'What documents do I need to provide?',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'Usually, all we need is a clear passport copy, a recent utility bill for proof of address, and your proposed company names.',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'Can I own 100% of my company as a foreigner?',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        'Yes, recent changes in UAE law allow expats to have 100% foreign ownership in most business activities, especially in Free Zones.',
     },
     {
-      question: 'Can we expect more inventory features?',
-      answer: 'In life it’s really better to never expect anything at all.',
+      question: 'Do I need to rent a physical office?',
+      answer: 'Not necessarily. Many of our Free Zone packages include a virtual office or flexi-desk setup, which is sufficient for your license.',
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question: 'What types of business activities are allowed?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'There are thousands of permitted activities, ranging from e-commerce and IT consulting to trading and logistics. We will help you choose the right one.',
     },
   ],
 ]
@@ -73,7 +73,7 @@ export function Faqs() {
         unoptimized
       />
       <Container className="relative">
-        <div className="mx-auto max-w-2xl lg:mx-0">
+        <div className="mx-auto max-w-2xl md:text-center">
           <h2
             id="faq-title"
             className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
@@ -82,7 +82,7 @@ export function Faqs() {
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
+            and someone will get back to you right away.
           </p>
         </div>
         <ul

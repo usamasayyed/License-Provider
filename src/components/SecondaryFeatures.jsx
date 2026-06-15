@@ -6,18 +6,19 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import screenshotContacts from '@/images/screenshots/contacts.png'
-import screenshotInventory from '@/images/screenshots/inventory.png'
-import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+import screenshotChooseActivity from '@/images/screenshots/choose-activity.png'
+import screenshotUploadDocs from '@/images/screenshots/upload-docs.png'
+import screenshotSetup24h from '@/images/screenshots/setup-24h.png'
+import screenshotBankAccount from '@/images/screenshots/bank-account.png'
 
 const features = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: '01 Choose Activity',
+    summary: 'Pick from 2,500+ business categories.',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
-    image: screenshotProfitLoss,
-    icon: function ReportingIcon() {
+      'Select the exact activities that align with your business model. We ensure full compliance so you can start trading immediately.',
+    image: screenshotChooseActivity,
+    icon: function ActivityIcon() {
       let id = useId()
       return (
         <>
@@ -46,13 +47,12 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
-    summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+    name: '02 Upload Docs',
+    summary: 'Just your passport — we handle the rest.',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
-    image: screenshotInventory,
-    icon: function InventoryIcon() {
+      'Upload a clear copy of your passport via our secure portal. No complicated paperwork, no physical forms, and no hidden requirements.',
+    image: screenshotUploadDocs,
+    icon: function UploadIcon() {
       return (
         <>
           <path
@@ -74,13 +74,12 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
-    summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+    name: '03 Get License',
+    summary: 'Receive your trade license in 24 hours.',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
-    image: screenshotContacts,
-    icon: function ContactsIcon() {
+      'Your official trade license will be delivered digitally within 24 hours, fully MoFA approved and ready for business.',
+    image: screenshotSetup24h,
+    icon: function LicenseIcon() {
       return (
         <>
           <path
@@ -90,6 +89,28 @@ const features = [
           />
           <path
             d="M12 28.395V28a6 6 0 0 1 12 0v.395A11.945 11.945 0 0 1 18 30c-2.186 0-4.235-.584-6-1.605ZM21 16.5c0-1.933-.5-3.5-3-3.5s-3 1.567-3 3.5 1.343 3.5 3 3.5 3-1.567 3-3.5Z"
+            fill="#fff"
+          />
+        </>
+      )
+    },
+  },
+  {
+    name: '04 Open Bank',
+    summary: 'Connected to 26+ banking partners instantly.',
+    description:
+      'With your new license, we guarantee a fast-track corporate bank account opening with a dedicated IBAN.',
+    image: screenshotBankAccount,
+    icon: function BankIcon() {
+      return (
+        <>
+          <path
+            opacity=".5"
+            d="M20 18v-4h-4v4h4ZM14 18v-4h-4v4h4Z"
+            fill="#fff"
+          />
+          <path
+            d="M6 22V8h24v14H6Zm2-12v10h20V10H8Z"
             fill="#fff"
           />
         </>
@@ -158,7 +179,7 @@ function FeaturesDesktop() {
     <TabGroup className="hidden lg:mt-20 lg:block">
       {({ selectedIndex }) => (
         <>
-          <TabList className="grid grid-cols-3 gap-x-8">
+          <TabList className="grid grid-cols-4 gap-x-8">
             {features.map((feature, featureIndex) => (
               <Feature
                 key={feature.summary}
@@ -218,11 +239,10 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+            Simple Process
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            4 Steps to Your License
           </p>
         </div>
         <FeaturesMobile />
